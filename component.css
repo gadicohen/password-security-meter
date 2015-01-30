@@ -1,0 +1,288 @@
+
+@import url(http://fonts.googleapis.com/css?family=Sintony:400,700);
+
+.color-1 {
+ background: #6C7A89; 
+text-align: center;
+	position: relative;}
+
+
+.color-2 { background: #95A5A6; }
+
+
+.color-3 {  
+    -moz-transition:background-color 2s ease;
+    -webkit-transition:background-color 2s ease;
+    -o-transition:background-color 2s ease;
+    -ms-transition:background-color 2s ease;
+    transition:background-color 2s ease;
+
+background: #BFBFBF;
+
+}
+
+.color-4 { background: #BDC3C7; }
+
+
+.color-5 { background: #ABB7B7 ; }
+
+
+
+
+html, body, section, .container, .header {
+	height: 100%;
+}
+
+#dendroUsable{
+	position:relative;
+	width:200px;
+	height:200px;
+   	border:2px solid black;
+   	margin-left:auto;
+   	margin-right:auto;
+   	left:10px;
+   	visibility:hidden;
+}
+
+#brickreuse{
+	position:relative;
+	width:200px;
+	height:200px;
+   	border:0px solid black;
+   	margin-left:auto;
+   	   	left:0px;
+
+   	margin-right:auto;
+
+
+}
+
+#infobox{
+	position:relative;margins:0 auto; color:#2c3e50;width:600px;margin-left:auto;
+   	margin-right:auto;text-align: left;
+}
+
+
+#resize{
+	font-size: 70px;
+	text-align: center;
+	z-index:1000000;
+	font-weight: bold;
+	background-color:#ABB7B7;
+}
+.brick{
+	opacity: .7;
+	-webkit-transition: opacity 5s linear;
+-moz-transition: opacity 5s linear;
+-o-transition: opacity 5s linear;
+transition: opacity 5s linear;
+}
+.arrow{
+    background: url("arrow.png") no-repeat 0;
+    height: 400px;
+    width:400px;
+    left: 214px;
+    position: absolute;
+    top: 10px;
+    width: 11px;
+
+   	/* Defining a smooth CSS3 animation for turning the arrow */
+
+    -moz-transition:0.3s;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    -ms-transition:0.3s;
+    transition:0.3s;
+
+    /* Putting the arrow in its initial position */
+
+    -moz-transform: rotate(-134deg);
+    -webkit-transform: rotate(-134deg);
+    -o-transform: rotate(-134deg);
+    -ms-transform: rotate(-134deg);
+    transform: rotate(-134deg);
+}
+.rates{
+		position:relative;
+		top:200px;
+		letter-spacing: -1px;
+		font-weight: lighter;
+		z-index:100000;
+		width:300px;
+		height:30px;
+}
+#time{
+	color:black;
+	z-index:100000;
+}
+
+#bricksH{
+	position:relative;
+	z-index:1000000;
+}
+.passinput{
+	position:relative;
+	height:50px;
+	width:350px;
+	border-radius: 15px;
+	font-size:40px;
+}
+
+.password_box{
+	position:relative;
+	font-size:20px;
+	top:2px;
+	right:15px;
+	letter-spacing: -1px;
+}
+
+#mycanvas{
+	z-index: -10;
+}
+
+.pass{
+	position:relative;
+	z-index: 10000;
+}
+
+#trafficpass{
+    -moz-transition:background-color 2s ease;
+    -webkit-transition:background-color 2s ease;
+    -o-transition:background-color 2s ease;
+    -ms-transition:background-color 2s ease;
+    transition:background-color 2s ease;
+}
+
+body {
+	background: #E4F1FE;
+	color: #ecf0f1;
+	font-size: 100%;
+	line-height: 1.25;
+	font-family: 'Sintony', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	color:#2c3e50;
+	font-weight:bold;
+	text-decoration: none;
+	outline: none;
+}
+
+.use{
+	position:relative;
+	top:0px;
+	z-index:10000;
+	background-color:    #ABB7B7;
+	font-size: 20px;
+	font-family: 'Sintony', sans-serif;
+	color:white;
+   	border:2px solid;   
+   	border-color:white;
+   	letter-spacing:-2px;
+}
+
+.i{
+	position:absolute;
+	left:5px;
+	top:560px;
+	z-index:10000;
+	background-color:  #6C7A89;
+	font-size: 20px;
+	font-family: 'Sintony', sans-serif;
+	color:white;
+   	border:2px solid;   
+   	border-color:white;
+   	letter-spacing:-2px;
+   }
+button{
+	position:absolute;
+	right:5px;
+	top:560px;
+	z-index:10000;
+	background-color:  #6C7A89;
+	font-size: 20px;
+	font-family: 'Sintony', sans-serif;
+	color:white;
+   	border:2px solid;   
+   	border-color:white;
+   	letter-spacing:-2px;
+}
+
+canvas{
+ 	opacity: .4;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.header {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+	position: relative;
+	margin: 0 40px 40px;
+	height: 100px;
+}
+
+#buttoninfo{
+	position:absolute;
+	text-align: center;
+	left:10%;
+	top:560px;
+	width:80%;
+	font-size:11px;
+	color:white;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 3em;
+	font-weight: 300;
+	position: relative;
+	top: 50%;
+	color: #2c3e50;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.header h1 span {
+	display: block;
+	padding: 0.2em 0 0em 0em;
+	font-size: 0.6em;
+	font-weight: 300;
+	color: #92a1a4;
+}
+
+.header h1 span.info {
+	text-transform: uppercase;
+	font-size: 0.35em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #22313F;
+	padding-top: 10px;
+}
+
+
+
+section {
+	padding: 0;
+	text-align: center;
+	position: relative;
+	margin: 50px;
+	height: 600px;
+	overflow: hidden;
+}
+
+section h2 {
+	font-weight: 300;
+	color: white;
+	font-size: 3.5em;
+	margin: 30px;
+}
+
+@media screen and (max-width: 25em) {
+	.header { font-size: 75%; }
+
+
+
+

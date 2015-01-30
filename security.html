@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Gadi Cohen Development Assignment</title>
+		<meta name="description" content="Arrow Navigation Styles: Ideas and styles for arrow navigations" />
+		<meta name="keywords" content="arrow navigation, effect, web design, inspiration" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		<script src="password.js"></script>
+		<link rel="stylesheet" type="text/css" href="component.css">
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		
+		<div class="container" >
+			<!-- Top Navigation -->
+			<!-- Top Navigation -->
+
+			<div id="resize" style="visibility:hidden">Please make your screen wider.</div>
+			<header class="header">
+				<h1>Password Strength Meter <span>Ideas for password strength meter</span>
+					<span class="info" id="info">Gadi Cohen, Fall 2014</span></h1>
+
+			<button type="button" class="use" onclick="makeUsable()">"Reusable?"</button>
+			</header>
+
+			<section class="color-1" id="dendro">
+				<button type="button" class="i" onclick="showOverlay(buttoninfo)">info</button>
+				<button type="button" class="clear" onclick="clearCanvas()">clear</button>
+
+				<h2 class="pass">Tree Rings </h2>
+				
+
+
+
+				<label class="pass"  for="fmPass">
+					<span class="password_box pass">Password</span>    
+					<input class="passinput pass" id="fmPass" type="password" value="" name="Pass" maxlength="100">
+					<div class="pass"><span id="rates" class="rates pass"></span><br></br></div>
+					
+
+				</label>
+
+				<div id="passwordIndicator" class="color-1" >
+				        
+
+				        <p>
+				        </p>
+				    </div>
+
+				 <div id="dendroUsable"></div>
+				<span id="buttoninfo" class="pass" style="visibility:hidden">Tree ring dating. Longer it takes to crack your password, thicker your trunk. Password-cracking times were calculated by finding the average of MD5, SHA1, MD5Crypt and Bcrypt password-cracking rates, with calculated rate information from <a href="http://hashcat.net/oclhashcat/"> oclhashcat. </a></span>
+
+			</section>
+
+			<section class="color-3">
+				<h2>Traffic</h2>
+
+				<label class="pass"  for="fmPass">
+					<span class="password_box">Password</span>    
+					<input class="passinput" id="trafficpass" type="password" value="" name="Pass" maxlength="100">
+				</label>
+		
+			</section>
+
+			<section class="color-2" id="bricks">
+				<h2 id="bricksH">Bricks</h2>
+				
+				<button type="button" class="clear" onclick="clearBricks()">clear</button>
+				<label class="pass"  for="fmPass">
+					<span class="password_box">Password</span>    
+					<input class="passinput" id="bricksPass" type="password" value="" name="Pass" maxlength="100">
+					<div class="pass"><span id="rates2" class="rates pass"></span><br></br></div>
+				</label>
+
+				<div id="brickreuse"></div>
+		
+			</section>
+
+
+
+			<section class="color-4" id="Arrow">
+				<h2 style="color:#2c3e50">Information</h2>
+				
+				<div id="infobox"> 
+
+					Novelty: Not many password security meters use a responsive graphical interface to display the amount of time it would take to crack a password.
+
+					<br/><br/>
+					Design: It's aesthetically pleasing, consistent, prevents errors as much as possible, and is intuitive and easy to use, among other things. 
+
+					<br/><br/>
+
+					Reusable: These three widgets can be reused on other websites -- Dendrochronoly would be made smaller. Pressing the "Reusable?" button at the top will convert the Traffic and Bricks widgets to fit tighter spaces to demonstrate their flexibility. 
+
+					<br/><br/>All password strengths were calculated using the same algorithm, which takes into account password length and the inclusion of different characters and finds the number of seconds it would take for different computers to crack it, returning all the different rates' averages. Then it translates seconds into legible time (minutes, hours, days, years). 
+				<br/>				<br/>
+
+				For Dendrochonology, I create a new canvas with a circle every time the password-cracking time changes to reflect the addition of a new tree ring. I also control for the edge case of window resizing. 
+								<br/>				<br/>
+
+
+
+
+		
+			</section>
+
+
+			
+		</div><!-- /container -->
+		
+
+	</body>
+</html>
